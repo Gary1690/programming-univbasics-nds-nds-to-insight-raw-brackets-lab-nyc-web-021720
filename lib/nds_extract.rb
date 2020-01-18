@@ -14,8 +14,7 @@ def directors_totals(nds)
     element[:movies].each do |movie|
       total+= movie[:worldwide_gross]
     end
-    puts total
-    puts ""
+    result[element[:name]] = total
   end
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
