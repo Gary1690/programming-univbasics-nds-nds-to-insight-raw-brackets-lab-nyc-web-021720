@@ -9,7 +9,6 @@ def directors_totals(nds)
 
   result = {}
   directors_database.each do |element|
-    puts element[:name]
     total = 0
     element[:movies].each do |movie|
       total+= movie[:worldwide_gross]
