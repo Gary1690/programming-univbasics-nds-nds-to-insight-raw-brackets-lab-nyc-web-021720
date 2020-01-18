@@ -23,5 +23,4 @@ def directors_totals(nds)
   nil
 end
 
-puts 'variable="Maria"'
-puts 'echo $variable'
+
