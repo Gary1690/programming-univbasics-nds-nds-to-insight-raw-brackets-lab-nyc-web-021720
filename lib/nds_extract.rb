@@ -10,6 +10,12 @@ def directors_totals(nds)
   result = {}
   directors_database.each do |element|
     puts element[:name]
+    total = 0
+    element[:movies].each do |movie|
+      total+= movie[:worldwide_gross]
+    end
+    puts total
+    puts ""
   end
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
